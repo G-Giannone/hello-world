@@ -1,9 +1,9 @@
-$(document).ready(function() {
-    $("div").mouseenter(function() {
-        $("div").fadeTo('fast', 0);
+var main = function() {
+    $('div').click(function() {
+       $('div').animate({
+           left: '250px'
+       }, 200); 
     });
-    $("div").mouseleave(function() {
-        $("div").fadeTo('fast', 0.5);
-        
-    });
-});
+};
+
+$(document).ready(main);
