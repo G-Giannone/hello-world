@@ -1,49 +1,51 @@
-/* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
 
 
-/* specific divs */
-div {
-    height: 100px;
-    width: 100px;
-    background-color: #FA6900;
-    border-radius: 5px;
+#base {
+    height:600px;
+    width:500px;
+    background-color: grey;
+    border-radius:5px;
+    z-index: -1;
+    position: absolute;
+    text-align: center;
 }
+
+#screen {
+	height: 100px;
+	width: 485px;
+	background-color: white;
+	border-radius: 5px;
+	position: relative;
+	left: 7px;
+	top: 5px;
+	z-index: 1;
+	text-align: right;
+}
+
+#result {
+	font-size: 100px;
+}
+
+
+
+#num_pad {
+	height: 475px;
+	width: 460px;
+	text-align: center;
+	position: relative;
+}
+
+.num_button {
+	height: 100px;
+	width: 100px;
+	background-color: #54575c;
+	font-size: 50px;
+	text-align: center;
+	left: 25px;
+	display: inline-block;
+	position: relative;
+	margin: 5px 5px 5px 5px;
+	border-radius: 5px;
+	top: 10px;
+}
+
